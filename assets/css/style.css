@@ -25,9 +25,13 @@ body {
     color: var(--color-font);
 }
 
-.section-1 {
+/* -------------------------------------
+---Portada principal de la invitación---
+---------------------------------------- */
+
+.front-page {
     height: 100dvh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photos/main-7.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photos/p-main.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -36,7 +40,7 @@ body {
     align-items: center;
 }
 
-.title {
+.front-page__title {
     font-family: var(--font-title);
     color: #FFFFFF;
     text-align: center;
@@ -49,7 +53,7 @@ h2 {
     font-weight: 100;
 }
 
-.title p {
+.front-page__title p {
     font-size: 4rem;
     margin: 0;
     line-height: 4rem;
@@ -62,12 +66,39 @@ h1 {
     margin: 0;
 }
 
+/* -----------------------------------------------------
+---------- Portada principal de la invitación ----------
+-------------------------------------------------------- */
+
+.music-verse {
+    text-align: center;
+    margin: clamp(1.375rem, -0.781rem + 4.492vw, 2.813rem) 0;
+}
+
+.music-verse .music__text, .music-verse .verse__text p, .music-verse .verse__title {
+    font-size: clamp(0.875rem, -1.375rem + 4.688vw, 2.375rem);
+}
+
+.music-verse img {
+    width: clamp(9.125rem, -13.563rem + 47.266vw, 24.25rem);
+    cursor: pointer;
+}
+
+.music-verse .verse__text {
+    margin: auto;
+    width: clamp(21.438rem, -35.469rem + 118.555vw, 59.375rem);
+}
+
+/* -----------------------------------------------------
+----------------- SECTION MEDIA QUERYS -----------------
+-------------------------------------------------------- */
+
 @media screen and (min-width:768px) {
     h2 {
         font-size: 7rem;
     }
 
-    .title p {
+    .front-page__title p {
         font-size: 5.6rem;
         line-height: 5.6rem;
     }

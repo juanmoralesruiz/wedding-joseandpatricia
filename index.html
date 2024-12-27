@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>Nuestra boda - José y Patricia</title>
+</head>
+
+<body>
+    <!-- Portada de la invitación -->
+    <section class="front-page">
+        <h1>Nuestra Boda</h2>
+            <div class="front-page__title">
+                <h2>José</h2>
+                <p>y</p>
+                <h2>Patricia</h2>
+            </div>
+    </section>
+
+    <!-- Sección para el reproductor de música y el versículo -->
+    <section class="music-verse">
+        <p class="music__text">HAZ CLIC PARA ESCUCHAR NUESTRA CANCIÓN</p>
+        <img src="assets/img/icons/music-sep.webp" alt="Reproductor de música" onclick="playAudio()">
+        <div class="verse__text">
+            <p>"EL AMOR ES PACIENTE, ES BONDADOSO. EL AMOR NO ES ENVIDIOSO NI JACTANCIOSO, NI ORGULLOSO"</p>
+        </div>
+        <p class="verse__title">1 CORINTIOS 13:4</p>
+    </section>
+    
+    <!-- Integrar audio a la página -->
+    <audio src="assets/audio/photograph-ed sheeran.mp3" id="bg-music" loop></audio>
+</body>
+</html>
