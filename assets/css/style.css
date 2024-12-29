@@ -38,7 +38,7 @@ body {
     padding: 0;
 } */
 
-.music-verse .music__text, .music-verse .verse__text p, .music-verse .verse__title, .people__title p, .normal-text {
+.music-verse .music__text, .music-verse .verse__text p, .music-verse .verse__title, .people__title p, .normal-text, .dress-code p, .dress-code__white p {
     font-size: clamp(1rem, -0.781rem + 3.711vw, 2.188rem);
 }
 
@@ -67,6 +67,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sunflower-separator {
+    width: clamp(9.688rem, -10.469rem + 41.992vw, 23.125rem);
+    cursor: pointer;
+}
+
+.icon {
+    width: clamp(4.688rem, -1.875rem + 13.672vw, 9.063rem);
+}
+
+.bold {
+    font-weight: 600;
 }
 
 /* -----------------------------------------------------
@@ -111,11 +124,6 @@ h2:nth-child(2) {
 
 .music-verse {
     text-align: center;
-}
-
-.music-verse img {
-    width: clamp(9.688rem, -10.469rem + 41.992vw, 23.125rem);
-    cursor: pointer;
 }
 
 .music-verse .verse__text {
@@ -197,6 +205,87 @@ h2:nth-child(2) {
 }
 
 /* -----------------------------------------------------
+---------- Portada principal de la invitación ----------
+-------------------------------------------------------- */
+
+.dress-code {
+    text-align: center;
+}
+
+.dress-code__white {
+    width: clamp(20rem, -30.344rem + 104.883vw, 53.563rem);
+    margin: auto;
+}
+
+/* -----------------------------------------------------
+------------------- Galería de fotos -------------------
+-------------------------------------------------------- */
+
+.slideshow-container {
+    width: clamp(20.625rem, -11.719rem + 67.383vw, 42.188rem);
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    border-radius: 3px;
+    height: clamp(13.75rem, -7.813rem + 44.922vw, 28.125rem);
+    object-fit: cover;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: clamp(0.625rem, 0.063rem + 1.172vw, 1rem);
+    color: #d69a38e1;
+    font-weight: bold;
+    font-size: clamp(0.813rem, 0.344rem + 0.977vw, 1.125rem);
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #ddcca496;
+}
+
+.dot {
+    cursor: pointer;
+    height: clamp(0.938rem, 0.469rem + 0.977vw, 1.25rem);
+    width: clamp(0.938rem, 0.469rem + 0.977vw, 1.25rem);
+    margin: 0 clamp(0.125rem, -0.156rem + 0.586vw, 0.313rem);
+    background-color: #dacfbf;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dots {
+    /* margin-bottom: 15px; */
+}
+
+.active, .dot:hover {
+    background-color: #E8B032;
+}
+
+/* -----------------------------------------------------
 ----------------- SECCIÓN MEDIA QUERYS -----------------
 -------------------------------------------------------- */
 
@@ -207,5 +296,5 @@ h2:nth-child(2) {
 }
 
 @media screen and (min-width:1024px) {
-    
+
 }
