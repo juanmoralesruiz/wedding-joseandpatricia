@@ -27,11 +27,18 @@ body {
     color: var(--color-font);
 }
 
+
+
 /* -----------------------------------------------------
 ------------------- Estilos generales ------------------
 -------------------------------------------------------- */
 
-.music-verse .music__text, .music-verse .verse__text p, .music-verse .verse__title, .people__title p {
+/* h1, h2, h3, p, div, img {
+    margin: 0;
+    padding: 0;
+} */
+
+.music-verse .music__text, .music-verse .verse__text p, .music-verse .verse__title, .people__title p, .normal__text {
     font-size: clamp(0.875rem, -1.375rem + 4.688vw, 2.375rem);
 }
 
@@ -45,6 +52,21 @@ body {
 .sunflower-icon {
     width: clamp(0.938rem, -0.844rem + 3.711vw, 2.125rem);
     height: clamp(0.938rem, -0.844rem + 3.711vw, 2.125rem);
+}
+
+.name__text, .cd__invitation h3 {
+    font-family: var(--font-italic);
+    font-weight: 300;
+}
+
+.name__title, .countdown__date p, .countdown__time .time__char, .countdown__time .time__text {
+    font-family: var(--font-title);
+}
+
+.countdown__date, .countdown__time, .name__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -----------------------------------------------------
@@ -68,7 +90,6 @@ body {
 
 h2 {
     font-size: 5rem;
-    margin: 0;
     font-weight: 100;
 }
 
@@ -82,7 +103,6 @@ h1 {
     font-size: 2rem;
     font-weight: 400;
     color: #FFFFFF;
-    margin: 0;
 }
 
 /* -----------------------------------------------------
@@ -108,7 +128,7 @@ h1 {
 ------------ Sección de personas importantes -----------
 -------------------------------------------------------- */
 
-.people .line {
+.people .line_h {
     width: clamp(15.313rem, -48.906rem + 133.789vw, 58.125rem);
     height: clamp(0.094rem, 0rem + 0.195vw, 0.156rem);
     background: rgb(254,252,241);
@@ -119,12 +139,6 @@ h1 {
     width: clamp(11.875rem, -20rem + 66.406vw, 33.125rem);
 }
 
-.name__title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .name__title p {
     font-size: clamp(0.75rem, -0.938rem + 3.516vw, 1.875rem);
     font-weight: 600;
@@ -132,9 +146,55 @@ h1 {
 }
 
 .name__text {
-    font-family: var(--font-italic);
-    font-weight: 300;
     font-size: clamp(1.625rem, -1.938rem + 7.422vw, 4rem);
+}
+
+/* -----------------------------------------------------
+-------- Sección de invitación y cuenta regresiva ------
+-------------------------------------------------------- */
+
+.cd__invitation, .cd__countdown {
+    text-align: center;
+}
+
+.invitation__us {
+    font-size: 23px;
+}
+
+.cd__invitation h3 {
+    font-size: 95px;
+}
+
+.countdown__text {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.countdown__date p {
+    font-size: 42px;
+}
+
+.countdown__time .time__char {
+    font-size: 32px;
+}
+
+.countdown__time .time__text {
+    font-size: 13px;
+}
+
+.line_v {
+    width: 3px;
+    background-color: #CFB893;
+}
+
+.countdown__date .line_v {
+    height: 38px;
+    margin: 0 10px;
+}
+
+.countdown__time .line_v {
+    height: 42px;
+    margin: 0 7px;
 }
 
 /* -----------------------------------------------------
