@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <script src="assets/js/main.js" defer></script>
     <title>Nuestra boda - José y Patricia</title>
 </head>
@@ -140,7 +141,7 @@
     </section>
 
     <!-- Sección de galería de fotos -->
-    <section class="photos">
+    <section class="gallery">
         <div class="slideshow-container">
             <div class="mySlides">
                 <img src="assets/img/photos/p-01.webp" style="width:100%">
@@ -196,6 +197,29 @@
             <span class="dot" onclick="currentSlide(12)"></span>
         </div>
     </section>
+
+    <!-- Sección de ubicación -->
+    <section class="ubication">
+        <img src="assets/img/icons/cup.webp" alt="Ícono de la recepción" class="icon">
+        <p class="section__title">Recepción</p>
+        <div class="ubication__section">
+            <p class="ubication__name">Nuestra Villa</p>
+            <button class="main-btn name__title" id="open-map">
+                <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                <p>UBICACIÓN</p>
+                <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+            </button>
+        </div>
+    </section>
+
+    <dialog class="map" id="map">
+        <div class="map__section">
+            <button id="close-map"><span class="material-symbols-outlined">Cancel</span></button>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.985905327665!2d-79.06586392587403!3d-8.10291658105296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad3d941f496e3d%3A0x240e3e9c0083c19e!2sNuestra%20Villa!5e0!3m2!1sen!2spe!4v1735541136381!5m2!1sen!2spe" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </dialog>
+
+    <img src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
     
     <!-- Integrar audio a la página -->
     <audio src="assets/audio/photograph-ed sheeran.mp3" id="bg-music" loop></audio>

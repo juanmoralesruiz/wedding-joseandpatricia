@@ -65,3 +65,25 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+// Funcionalidad modal mapa
+const modal = document.getElementById("map");
+const btnOpen = document.getElementById("open-map");
+const btnClose = document.getElementById("close-map");
+const body = document.querySelector("body");
+
+btnOpen.addEventListener("click", () => {
+    modal.showModal();
+    body.classList.add("block-scroll");
+});
+
+btnClose.addEventListener("click", () => {
+    modal.close();
+    body.classList.remove("block-scroll");
+});
+
+document.body.addEventListener("keydown", function(event) {
+    if (event.code === 'Escape') {
+        body.classList.remove("block-scroll");
+    }
+});
