@@ -40,12 +40,11 @@ h1, h2, h3, p, div, img, button, iframe {
     padding: 0;
 }
 
-.music-verse .music__text, .music-verse .verse__text p, .music-verse .verse__title, .people__title p, .normal-text, .dress-code p, .dress-code__white p {
-    /* Tamaño ya arreglado */
-    font-size: clamp(1rem, 0.535rem + 2.065vw, 2.188rem);
+.music-verse .music__text, .music-verse .verse__text p, .music-verse .verse__title, .people__title p, .normal-text, .dress-code p, .dress-code__white p, .group__activity p, .name__title.name__title--invitation p {
+    font-size: clamp(0.938rem, 0.522rem + 1.848vw, 2rem);
 }
 
-.people, .front-page, .people__name, .ubication__section, .map__section {
+.people, .front-page, .people__name, .ubication__section, .map__section, .group__section, .group__activity, .activity__text, .itinerary {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,8 +52,8 @@ h1, h2, h3, p, div, img, button, iframe {
 }
 
 .sunflower-icon {
-    width: clamp(1.063rem, 0.5rem + 1.172vw, 1.438rem);
-    height: clamp(1.063rem, 0.5rem + 1.172vw, 1.438rem);
+    width: clamp(1.25rem, 1.054rem + 0.87vw, 1.75rem);
+    height: clamp(1.25rem, 1.054rem + 0.87vw, 1.75rem);
 }
 
 .name__text, .cd__invitation h3, .section__title, .ubication__name {
@@ -73,12 +72,12 @@ h1, h2, h3, p, div, img, button, iframe {
 }
 
 .sunflower-separator {
-    width: clamp(9.688rem, -10.469rem + 41.992vw, 23.125rem);
+    width: clamp(9.688rem, 4.429rem + 23.37vw, 23.125rem);
     cursor: pointer;
 }
 
 .icon {
-    width: clamp(4.688rem, -1.875rem + 13.672vw, 9.063rem);
+    width: clamp(4.688rem, 2.976rem + 7.609vw, 9.063rem);
 }
 
 .bold {
@@ -86,7 +85,7 @@ h1, h2, h3, p, div, img, button, iframe {
 }
 
 .section__title {
-    font-size: clamp(5rem, 1.25rem + 7.813vw, 7.5rem);
+    font-size: clamp(5rem, 4.022rem + 4.348vw, 7.5rem);
 }
 
 .block-scroll {
@@ -113,20 +112,20 @@ h1, h2, h3, p, div, img, button, iframe {
 }
 
 h1 {
-    font-size: clamp(2.188rem, 1.25rem + 1.953vw, 2.813rem);
+    font-size: clamp(2.188rem, 1.943rem + 1.087vw, 2.813rem);
     font-weight: 400;
     color: #FFFFFF;
     margin: 25px 0 10px 0;
 }
 
 h2 {
-    font-size: clamp(6.25rem, 3.906rem + 4.883vw, 7.813rem);
+    font-size: clamp(6.25rem, 5.639rem + 2.717vw, 7.813rem);
     font-weight: 100;
-    line-height: clamp(7.5rem, 6.094rem + 2.93vw, 8.438rem);
+    line-height: clamp(7.5rem, 7.133rem + 1.63vw, 8.438rem);
 }
 
 h2:nth-child(2) {
-    margin-bottom: clamp(0.75rem, -1.875rem + 5.469vw, 2.5rem);
+    margin-bottom: clamp(0.75rem, 0.065rem + 3.043vw, 2.5rem);
 }
 
 /* -----------------------------------------------------
@@ -139,7 +138,7 @@ h2:nth-child(2) {
 
 .music-verse .verse__text {
     margin: auto;
-    width: clamp(19.125rem, -32.531rem + 107.617vw, 53.563rem);
+    width: clamp(18rem, 5.87rem + 53.913vw, 49rem);
 }
 
 /* -----------------------------------------------------
@@ -147,24 +146,24 @@ h2:nth-child(2) {
 -------------------------------------------------------- */
 
 .people .line_h {
-    width: clamp(15.313rem, -48.906rem + 133.789vw, 58.125rem);
-    height: clamp(0.094rem, 0rem + 0.195vw, 0.156rem);
+    width: clamp(15.313rem, -1.44rem + 74.457vw, 58.125rem);
+    height: clamp(0.094rem, 0.069rem + 0.109vw, 0.156rem);
     background: rgb(254,252,241);
     background: linear-gradient(90deg, rgba(254,252,241,1) 0%, rgba(232,176,50,1) 30%, rgba(232,176,50,1) 70%, rgba(254,252,241,1) 100%);
 }
 
 .people__title {
-    width: clamp(13.25rem, -7.375rem + 42.969vw, 27rem);
+    width: clamp(12.5rem, 6.973rem + 24.565vw, 26.625rem);
 }
 
 .name__title p {
-    font-size: clamp(0.844rem, 0.234rem + 1.27vw, 1.25rem);
+    font-size: clamp(0.938rem, 0.815rem + 0.543vw, 1.25rem);
     font-weight: 600;
-    margin: 0 clamp(0.313rem, 0.031rem + 0.586vw, 0.5rem);
+    margin: 0 clamp(0.5rem, 0.451rem + 0.217vw, 0.625rem);
 }
 
 .name__text {
-    font-size: clamp(2.188rem, -0.156rem + 4.883vw, 3.75rem);
+    font-size: clamp(2.25rem, 1.565rem + 3.043vw, 3.125rem);
 }
 
 /* -----------------------------------------------------
@@ -176,47 +175,62 @@ h2:nth-child(2) {
 }
 
 .invitation__us {
-    font-size: clamp(1.438rem, -0.906rem + 4.883vw, 3rem);
+    font-size: clamp(1.438rem, 0.826rem + 2.717vw, 3rem);
 }
 
 .cd__invitation h3 {
-    font-size: clamp(5.938rem, -2.031rem + 16.602vw, 11.25rem);
+    font-size: clamp(5.938rem, 3.859rem + 9.239vw, 11.25rem);
+}
+
+.cd__invitation .invitation__group--text1 {
+    width: clamp(11.125rem, 6.234rem + 21.739vw, 23.625rem);
+    margin: 0 auto;
+}
+
+.name__title.name__title--invitation img {
+    width: clamp(1.313rem, 0.946rem + 1.63vw, 2.25rem);
+    height: clamp(1.313rem, 0.946rem + 1.63vw, 2.25rem);
+}
+
+.cd__invitation .invitation__group--text2 {
+    width: clamp(16.75rem, 9.315rem + 33.043vw, 35.75rem);
+    margin: 0 auto;
 }
 
 .countdown__text {
     font-weight: 600;
-    font-size: clamp(1.375rem, -0.125rem + 3.125vw, 2.375rem);
+    font-size: clamp(1.375rem, 0.984rem + 1.739vw, 2.375rem);
 }
 
 .countdown__date p {
-    font-size: clamp(2.625rem, 0.563rem + 4.297vw, 4rem);
+    font-size: clamp(2.625rem, 2.087rem + 2.391vw, 4rem);
 }
 
 .countdown__time .time__char {
-    font-size: clamp(2rem, 0.031rem + 4.102vw, 3.313rem);
+    font-size: clamp(2rem, 1.486rem + 2.283vw, 3.313rem);
 }
 
 .countdown__time .time__text {
-    font-size: clamp(0.813rem, 0.531rem + 0.586vw, 1rem);
+    font-size: clamp(0.813rem, 0.739rem + 0.326vw, 1rem);
 }
 
 .line_v {
-    width: clamp(0.188rem, 0.094rem + 0.195vw, 0.25rem);
+    width: clamp(0.188rem, 0.163rem + 0.109vw, 0.25rem);
     background-color: #CFB893;
 }
 
 .countdown__date .line_v {
-    height: clamp(2.375rem, 0.688rem + 3.516vw, 3.5rem);
-    margin: 0 clamp(0.625rem, -0.313rem + 1.953vw, 1.25rem);
+    height: clamp(2.375rem, 1.935rem + 1.957vw, 3.5rem);
+    margin: 0 clamp(0.625rem, 0.38rem + 1.087vw, 1.25rem);
 }
 
 .countdown__time .line_v {
-    height: clamp(2.625rem, 0.75rem + 3.906vw, 3.875rem);
-    margin: 0 clamp(0.438rem, -0.406rem + 1.758vw, 1rem);
+    height: clamp(2.625rem, 2.136rem + 2.174vw, 3.875rem);
+    margin: 0 clamp(0.438rem, 0.217rem + 0.978vw, 1rem);
 }
 
 /* -----------------------------------------------------
----------- Portada principal de la invitación ----------
+------------- Sección código de vestimenta -------------
 -------------------------------------------------------- */
 
 .dress-code {
@@ -224,7 +238,7 @@ h2:nth-child(2) {
 }
 
 .dress-code__white {
-    width: clamp(20rem, -30.344rem + 104.883vw, 53.563rem);
+    width: clamp(18.125rem, 5.897rem + 54.348vw, 49.375rem);
     margin: auto;
 }
 
@@ -233,7 +247,7 @@ h2:nth-child(2) {
 -------------------------------------------------------- */
 
 .slideshow-container {
-    width: clamp(20.625rem, -11.719rem + 67.383vw, 42.188rem);
+    width: clamp(20.625rem, 12.188rem + 37.5vw, 42.188rem);
     position: relative;
     margin: auto;
 }
@@ -244,7 +258,7 @@ h2:nth-child(2) {
 
 .mySlides img {
     border-radius: 3px;
-    height: clamp(13.75rem, -7.813rem + 44.922vw, 28.125rem);
+    height: clamp(13.75rem, 8.125rem + 25vw, 28.125rem);
     object-fit: cover;
 }
 
@@ -254,10 +268,10 @@ h2:nth-child(2) {
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: clamp(0.625rem, 0.063rem + 1.172vw, 1rem);
+    padding: clamp(0.625rem, 0.478rem + 0.652vw, 1rem);
     color: #d69a38e1;
     font-weight: bold;
-    font-size: clamp(0.813rem, 0.344rem + 0.977vw, 1.125rem);
+    font-size: clamp(0.813rem, 0.69rem + 0.543vw, 1.125rem);
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -279,9 +293,9 @@ h2:nth-child(2) {
 
 .dot {
     cursor: pointer;
-    height: clamp(0.938rem, 0.469rem + 0.977vw, 1.25rem);
-    width: clamp(0.938rem, 0.469rem + 0.977vw, 1.25rem);
-    margin: 0 clamp(0.125rem, -0.156rem + 0.586vw, 0.313rem);
+    height: clamp(0.938rem, 0.815rem + 0.543vw, 1.25rem);
+    width: clamp(0.938rem, 0.815rem + 0.543vw, 1.25rem);
+    margin: 0 clamp(0.125rem, 0.052rem + 0.326vw, 0.313rem);
     background-color: #dacfbf;
     border-radius: 50%;
     display: inline-block;
@@ -293,7 +307,7 @@ h2:nth-child(2) {
 }
 
 /* -----------------------------------------------------
-------------------- Galería de fotos -------------------
+----------------- Sección de ubicación -----------------
 -------------------------------------------------------- */
 
 .ubication {
@@ -302,8 +316,8 @@ h2:nth-child(2) {
 
 .ubication__section {
     margin: auto;
-    width: clamp(22.5rem, 0rem + 46.875vw, 37.5rem);
-    height: clamp(15.625rem, 3.625rem + 25vw, 23.625rem);
+    width: clamp(22.5rem, 16.63rem + 26.087vw, 37.5rem);
+    height: clamp(15.625rem, 12.495rem + 13.913vw, 23.625rem);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photos/ubication.webp);
     background-size: cover;
     background-position: center;
@@ -312,7 +326,7 @@ h2:nth-child(2) {
 }
 
 .ubication__name {
-    font-size: clamp(4.5rem, 1.875rem + 5.469vw, 6.25rem);
+    font-size: clamp(4.5rem, 3.815rem + 3.043vw, 6.25rem);
     color: #FFFFFF;
 }
 
@@ -320,7 +334,7 @@ h2:nth-child(2) {
     margin: 0 auto;
     border: none;
     background-color: var(--color-mainButton);
-    padding: clamp(0.625rem, 0.25rem + 0.781vw, 0.875rem) clamp(1.375rem, 1.094rem + 0.586vw, 1.563rem);
+    padding: clamp(0.625rem, 0.527rem + 0.435vw, 0.875rem) clamp(1.375rem, 1.302rem + 0.326vw, 1.563rem);
     border-radius: 12px;
     cursor: pointer;
 }
@@ -329,7 +343,7 @@ h2:nth-child(2) {
     color: #4B380C;
     font-family: var(--font-title);
     font-weight: 300;
-    font-size: clamp(0.844rem, 0.422rem + 0.879vw, 1.125rem);
+    font-size: clamp(0.844rem, 0.734rem + 0.489vw, 1.125rem);
 }
 
 .map::backdrop {
@@ -369,10 +383,43 @@ h2:nth-child(2) {
 }
 
 /* -----------------------------------------------------
+----------------- Sección de itinerario ----------------
+-------------------------------------------------------- */
+
+.itinerary__group {
+    width: clamp(15.625rem, 11.898rem + 16.566vw, 22.5rem);
+    display: flex;
+    justify-content: space-between;
+}
+
+.group__activity {
+    width: 95px;
+}
+
+.group__activity img {
+    width: clamp(4.5rem, 3.551rem + 4.217vw, 6.25rem);
+}
+
+.activity__text {
+    justify-content: center;
+    height: clamp(3.75rem, 2.801rem + 4.217vw, 5.5rem);
+}
+
+.activity__text p {
+    font-size: clamp(1rem, 0.729rem + 1.205vw, 1.5rem);
+}
+
+.group__line.line_v {
+    height: 64px;
+    background-color: var(--color-font);
+    margin: 4px 0 clamp(0.625rem, 0.557rem + 0.301vw, 0.75rem) 0;
+}
+
+/* -----------------------------------------------------
 ----------------- SECCIÓN MEDIA QUERYS -----------------
 -------------------------------------------------------- */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:821px) {
     .people__name {
         flex-direction: row;
     }
@@ -380,6 +427,22 @@ h2:nth-child(2) {
 
 @media screen and (min-width:1024px) {
     .map__section {
-        width: 60vw;
+        width: 65vw;
+        height: 85dvh;
+    }
+
+    .itinerary__group {
+        width: auto;
+        flex-direction: column;
+    }
+
+    .group__section {
+        flex-direction: row;
+    }
+
+    .group__line.line_v {
+        height: 4px;
+        width: clamp(5.625rem, 4.947rem + 3.012vw, 6.875rem);
+        margin: 0 clamp(1.563rem, 1.224rem + 1.506vw, 2.188rem);
     }
 }
