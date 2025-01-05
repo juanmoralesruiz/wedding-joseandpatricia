@@ -7,6 +7,7 @@ function playAudio() {
 //     document.getElementById("bg-music").pause();
 // }
 
+
 // Funcionalidad Cuenta regresiva
 const day = document.getElementById("days")
 const hour = document.getElementById("hours")
@@ -36,16 +37,15 @@ countTimer();
 
 setInterval(countTimer, 1000);
 
+
 // Funcionalidad carrusel de fotos
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -66,19 +66,20 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
+
 // Funcionalidad modal mapa
-const modal = document.getElementById("map");
-const btnOpen = document.getElementById("open-map");
-const btnClose = document.getElementById("close-map");
+const modal_map = document.getElementById("map");
+const btnOpenMap = document.getElementById("open-map");
+const btnCloseMap = document.getElementById("close-map");
 const body = document.querySelector("body");
 
-btnOpen.addEventListener("click", () => {
-    modal.showModal();
+btnOpenMap.addEventListener("click", () => {
+    modal_map.showModal();
     body.classList.add("block-scroll");
 });
 
-btnClose.addEventListener("click", () => {
-    modal.close();
+btnCloseMap.addEventListener("click", () => {
+    modal_map.close();
     body.classList.remove("block-scroll");
 });
 
@@ -86,4 +87,20 @@ document.body.addEventListener("keydown", function(event) {
     if (event.code === 'Escape') {
         body.classList.remove("block-scroll");
     }
+});
+
+
+// Funcionalidad modal regalos
+const modal_gift = document.getElementById("gift");
+const btnOpenGift = document.getElementById("open-gift");
+const btnCloseGift = document.getElementById("close-gift");
+
+btnOpenGift.addEventListener("click", () => {
+    modal_gift.showModal();
+    body.classList.add("block-scroll");
+});
+
+btnCloseGift.addEventListener("click", () => {
+    modal_gift.close();
+    body.classList.remove("block-scroll");
 });
