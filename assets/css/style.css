@@ -42,7 +42,7 @@ h1, h2, h3, p, div, img, button, iframe {
 }
 
 .music-verse .music__text, .music-verse .verse__text p, .music-verse .verse__title, .people__title p, .normal-text, .dress-code p, .dress-code__white p, .group__activity p, .name__title.name__title--invitation p {
-    font-size: clamp(0.938rem, 0.522rem + 1.848vw, 2rem);
+    font-size: clamp(0.938rem, 0.668rem + 1.196vw, 1.625rem);
 }
 
 .people, .front-page, .people__name, .ubication__section, .map__section, .group__section, .group__activity, .activity__text, .itinerary, .list__item {
@@ -73,12 +73,12 @@ h1, h2, h3, p, div, img, button, iframe {
 }
 
 .sunflower-separator {
-    width: clamp(9.688rem, 4.429rem + 23.37vw, 23.125rem);
+    width: clamp(9.688rem, 6.63rem + 13.587vw, 17.5rem);
     cursor: pointer;
 }
 
 .icon {
-    width: clamp(4.688rem, 2.976rem + 7.609vw, 9.063rem);
+    width: clamp(4.688rem, 3.587rem + 4.891vw, 7.5rem);
 }
 
 .bold {
@@ -139,7 +139,7 @@ h2:nth-child(2) {
 
 .music-verse .verse__text {
     margin: auto;
-    width: clamp(18rem, 5.87rem + 53.913vw, 49rem);
+    width: clamp(18rem, 9.391rem + 38.261vw, 40rem);
 }
 
 /* -----------------------------------------------------
@@ -154,7 +154,7 @@ h2:nth-child(2) {
 }
 
 .people__title {
-    width: clamp(12.5rem, 6.973rem + 24.565vw, 26.625rem);
+    width: clamp(12.5rem, 8.832rem + 16.304vw, 21.875rem);
 }
 
 .name__title p {
@@ -180,11 +180,11 @@ h2:nth-child(2) {
 }
 
 .cd__invitation h3 {
-    font-size: clamp(5.938rem, 3.859rem + 9.239vw, 11.25rem);
+    font-size: clamp(5.938rem, 5.082rem + 3.804vw, 8.125rem);
 }
 
 .cd__invitation .invitation__group--text1 {
-    width: clamp(11.125rem, 6.234rem + 21.739vw, 23.625rem);
+    width: clamp(11.125rem, 7.897rem + 14.348vw, 19.375rem);
     margin: 0 auto;
 }
 
@@ -194,7 +194,7 @@ h2:nth-child(2) {
 }
 
 .cd__invitation .invitation__group--text2 {
-    width: clamp(16.75rem, 9.315rem + 33.043vw, 35.75rem);
+    width: clamp(16.75rem, 11.81rem + 21.957vw, 29.375rem);
     margin: 0 auto;
 }
 
@@ -239,7 +239,7 @@ h2:nth-child(2) {
 }
 
 .dress-code__white {
-    width: clamp(18.125rem, 5.897rem + 54.348vw, 49.375rem);
+    width: clamp(18.125rem, 9.565rem + 38.043vw, 40rem);
     margin: auto;
 }
 
@@ -398,7 +398,7 @@ h2:nth-child(2) {
 }
 
 .group__activity img {
-    width: clamp(4.5rem, 3.551rem + 4.217vw, 6.25rem);
+    width: clamp(4.125rem, 3.651rem + 2.108vw, 5rem);
 }
 
 .activity__text {
@@ -407,13 +407,13 @@ h2:nth-child(2) {
 }
 
 .activity__text p {
-    font-size: clamp(1rem, 0.729rem + 1.205vw, 1.5rem);
+    font-size: clamp(0.875rem, 0.773rem + 0.452vw, 1.063rem);
 }
 
 .group__line.line_v {
     height: 64px;
     background-color: var(--color-font);
-    margin: 4px 0 clamp(0.625rem, 0.557rem + 0.301vw, 0.75rem) 0;
+    margin-bottom: clamp(0.375rem, 0.239rem + 0.602vw, 0.625rem);
 }
 
 /* -----------------------------------------------------
@@ -425,12 +425,12 @@ h2:nth-child(2) {
 }
 
 .gift__text {
-    width: clamp(20.375rem, 9.761rem + 47.174vw, 47.5rem);
+    width: clamp(20.625rem, 10.5rem + 45vw, 46.5rem);
     margin: auto;
 }
 
-.gift__text p {
-    font-size: clamp(0.75rem, 0.359rem + 1.739vw, 1.75rem);
+.little-text {
+    font-size: clamp(0.75rem, 0.505rem + 1.087vw, 1.375rem);
 }
 
 .gift__section {
@@ -489,7 +489,7 @@ h2:nth-child(2) {
     }
 }
 
-@media screen and (min-width:1025px) {
+@media screen and (min-width:1024px) {
     .map__section, .gift__section {
         width: 65vw;
         height: 85dvh;
@@ -507,6 +507,6 @@ h2:nth-child(2) {
     .group__line.line_v {
         height: 4px;
         width: clamp(5.625rem, 4.947rem + 3.012vw, 6.875rem);
-        margin: 0 clamp(1.563rem, 1.224rem + 1.506vw, 2.188rem);
+        margin: 0 15px;
     }
 }
