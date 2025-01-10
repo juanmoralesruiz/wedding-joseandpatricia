@@ -104,3 +104,19 @@ btnCloseGift.addEventListener("click", () => {
     modal_gift.close();
     body.classList.remove("block-scroll");
 });
+
+
+// Funcionalidad modal asistencia
+const modal_passes = document.getElementById("passes");
+const btnOpenPasses = document.getElementById("open-passes");
+const btnClosePasses = document.getElementById("close-passes");
+
+btnOpenPasses.addEventListener("click", () => {
+    modal_passes.showModal();
+    body.classList.add("block-scroll");
+});
+
+btnClosePasses.addEventListener("click", () => {
+    modal_passes.close();
+    body.classList.remove("block-scroll");
+});
