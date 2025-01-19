@@ -24,7 +24,7 @@
     <!-- Sección para el reproductor de música y el versículo -->
     <section class="music-verse">
         <p class="music__text">HAZ CLIC PARA ESCUCHAR NUESTRA CANCIÓN</p>
-        <img class="sunflower-separator" src="assets/img/icons/music-sep.webp" alt="Reproductor de música" onclick="playAudio()">
+        <img loading="lazy" class="sunflower-separator" src="assets/img/icons/music-sep.webp" alt="Reproductor de música" onclick="playAudio()">
         <div class="verse__text">
             <p>"EL AMOR ES PACIENTE, ES BONDADOSO. EL AMOR NO ES ENVIDIOSO NI JACTANCIOSO, NI ORGULLOSO"</p>
         </div>
@@ -40,18 +40,18 @@
         <div class="people__name">
             <div class="name__section">
                 <div class="name__title">
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                     <p>PADRES DEL NOVIO</p>
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                 </div>
                 <p class="name__text">Alex Valiente Rosales</p>
                 <p class="name__text">Mary Rosana Ruiz Perez</p>
             </div>
             <div class="name__section">
                 <div class="name__title">
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                     <p>PADRES DE LA NOVIA</p>
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                 </div>
                 <p class="name__text">Victor Raul Romero</p>
                 <p class="name__text">Cierto Esther Campos Lopez</p>
@@ -60,18 +60,18 @@
         <div class="people__name">
             <div class="name__section">
                 <div class="name__title">
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                     <p>PADRINOS</p>
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                 </div>
                 <p class="name__text">Angel Rodriguez Amaya</p>
                 <p class="name__text">Lud Rojas Villanueva</p>
             </div>
             <div class="name__section">
                 <div class="name__title">
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                     <p>TESTIGOS</p>
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                 </div>
                 <p class="name__text">Darcing Diaz Miranda</p>
                 <p class="name__text">Patricia Sevilla Nieves</p>
@@ -91,9 +91,9 @@
                 <p class="normal-text">TENEMOS EL HONOR DE INVITARLOS A CELEBRAR</p>
             </div>
             <div class="name__title name__title--invitation">
-                <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                 <p>NUESTRA BODA</p>
-                <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
             </div>
             <div class="invitation__group--text2">
                 <p class="normal-text">QUEREMOS QUE SEAN PARTE Y NOS ACOMPAÑEN A VIVIR ESTE MOMENTO</p>
@@ -135,53 +135,54 @@
 
     <!-- Sección invitación y cuenta regresiva -->
     <section class="dress-code">
-        <img src="assets/img/icons/dress-code.webp" alt="Ícono del código de vestimenta" class="icon">
+        <img loading="lazy" src="assets/img/icons/dress-code.webp" alt="Ícono del código de vestimenta" class="icon">
         <p>CÓDIGO DE VESTIMENTA</p>
         <p class="bold">ELEGANTE</p>
         <div class="dress-code__white">
             <p>"EL BLANCO ES UN COLOR HERMOSO, PERO EN NUESTRA BODA, <span class="bold">ES EXCLUSIVO PARA LA NOVIA</span>. ¡TODOS LOS DEMÁS COLORES ESTÁN DISPONIBLES!"</p>
         </div>
-        <img src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
+        <img loading="lazy" src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
     </section>
 
     <!-- Sección de galería de fotos -->
     <section class="gallery">
+        <p class="section__title">Galería</p>
         <div class="slideshow-container">
             <div class="mySlides">
-                <img src="assets/img/photos/p-01.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-01.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-02.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-02.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-03.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-03.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-04.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-04.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-05.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-05.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-06.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-06.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-07.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-07.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-08.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-08.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-09.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-09.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-10.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-10.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-11.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-11.webp" style="width:100%">
             </div>
             <div class="mySlides">
-                <img src="assets/img/photos/p-12.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-12.webp" style="width:100%">
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -204,14 +205,14 @@
 
     <!-- Sección de ubicación -->
     <section class="ubication">
-        <img src="assets/img/icons/cup.webp" alt="Ícono de la recepción" class="icon">
+        <img loading="lazy" src="assets/img/icons/cup.webp" alt="Ícono del código de vestimenta" class="icon">
         <p class="section__title">Recepción</p>
         <div class="ubication__section">
             <p class="ubication__name">Nuestra Villa</p>
             <button class="main-btn name__title" id="open-map">
-                <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                 <p>UBICACIÓN</p>
-                <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
             </button>
         </div>
     </section>
@@ -225,12 +226,12 @@
 
     <!-- Sección del itinerario -->
     <section class="itinerary">
-        <img src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
-        <p class="section__title">Recepción</p>
+        <img loading="lazy" src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
+        <p class="section__title">Itinerario</p>
         <div class="itinerary__group">
             <div class="group__section">
                 <div class="group__activity">
-                    <img src="assets/img/icons/civil.webp" alt="Ícono ceremonia civil">
+                    <img loading="lazy" src="assets/img/icons/civil.webp" alt="Ícono ceremonia civil">
                     <div class="activity__text">
                         <p>CEREMONIA CIVIL</p>
                         <p>3:30 PM</p>
@@ -238,7 +239,7 @@
                 </div>
                 <div class="group__line line_v"></div>
                 <div class="group__activity">
-                    <img src="assets/img/icons/church.webp" alt="Ícono ceremonia religiosa">
+                    <img loading="lazy" src="assets/img/icons/church.webp" alt="Ícono ceremonia religiosa">
                     <div class="activity__text">
                         <p>CEREMONIA RELIGIOSA</p>
                         <p>4:00 PM</p>
@@ -246,7 +247,7 @@
                 </div>
                 <div class="group__line line_v"></div>
                 <div class="group__activity">
-                    <img src="assets/img/icons/reception.webp" alt="Ícono recepción">
+                    <img loading="lazy" src="assets/img/icons/reception.webp" alt="Ícono recepción">
                     <div class="activity__text">
                         <p>RECEPCIÓN</p>
                         <p>6:00 PM</p>
@@ -254,7 +255,7 @@
                 </div>
                 <div class="group__line line_v"></div>
                 <div class="group__activity">
-                    <img src="assets/img/icons/toast.webp" alt="Ícono brindis">
+                    <img loading="lazy" src="assets/img/icons/toast.webp" alt="Ícono brindis">
                     <div class="activity__text">
                         <p>BRINDIS</p>
                         <p>7:00 PM</p>
@@ -263,7 +264,7 @@
             </div>
             <div class="group__section">
                 <div class="group__activity">
-                    <img src="assets/img/icons/vals.webp" alt="Ícono tiempo de vals">
+                    <img loading="lazy" src="assets/img/icons/vals.webp" alt="Ícono tiempo de vals">
                     <div class="activity__text">
                         <p>VALS</p>
                         <p>7:30 PM</p>
@@ -271,7 +272,7 @@
                 </div>
                 <div class="group__line line_v"></div>
                 <div class="group__activity">
-                    <img src="assets/img/icons/dinner.webp" alt="Ícono tiempo de cena">
+                    <img loading="lazy" src="assets/img/icons/dinner.webp" alt="Ícono tiempo de cena">
                     <div class="activity__text">
                         <p>CENA</p>
                         <p>8:00 PM</p>
@@ -279,7 +280,7 @@
                 </div>
                 <div class="group__line line_v"></div>
                 <div class="group__activity">
-                    <img src="assets/img/icons/show.webp" alt="Ícono tiempo del show">
+                    <img loading="lazy" src="assets/img/icons/show.webp" alt="Ícono tiempo del show">
                     <div class="activity__text">
                         <p>SHOW</p>
                         <p>8:30 PM</p>
@@ -287,7 +288,7 @@
                 </div>
                 <div class="group__line line_v"></div>
                 <div class="group__activity">
-                    <img src="assets/img/icons/bouquet.webp" alt="Ícono tiro del bouquet">
+                    <img loading="lazy" src="assets/img/icons/bouquet.webp" alt="Ícono tiro del bouquet">
                     <div class="activity__text">
                         <p>TIRA DE RAMO</p>
                         <p>9:00 PM</p>
@@ -299,15 +300,15 @@
 
     <!-- Sección de lista de regalos -->
     <section class="gift">
-        <img src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
+        <img loading="lazy" src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
         <p class="section__title">Regalos</p>
         <div class="gift__text">
             <p class="little-text">"EL MEJOR REGALO PARA NOSOTROS ES CONTAR CON TU PRESENCIA EN ESTE DÍA TAN IMPORTANTE, PERO SI QUIERES TENER UN DETALLE CON NOSOTROS AYÚDANOS A CONTRIBUIR CON NUESTRA CASITA SOÑADA"</p>
         </div>
         <button class="main-btn name__title" id="open-gift">
-            <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+            <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
             <p>LISTA DE REGALOS</p>
-            <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+            <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
         </button>
     </section>
 
@@ -316,72 +317,92 @@
             <button id="close-gift"><span class="material-symbols-outlined">Cancel</span></button>
             <div class="gift__list">
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/yape.webp" alt="Imagen yape"></div>
-                    <button class="item__name normal-text">Depósito o transferencia</button>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/yape.webp" alt="Imagen yape"></div>
+                    <button class="item__name normal-text" id="open-transfer">Depósito o transferencia</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/cafetera.webp" alt="Imagen cafetera"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/cafetera.webp" alt="Imagen cafetera"></div>
                     <button class="item__name normal-text">Cafetera</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/cocina.webp" alt="Imagen cocina"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/cocina.webp" alt="Imagen cocina"></div>
                     <button class="item__name normal-text">Cocina</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/refrigeradora.webp" alt="Imagen refrigeradora"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/refrigeradora.webp" alt="Imagen refrigeradora"></div>
                     <button class="item__name normal-text">Refrigeradora</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/lavadora.webp" alt="Imagen lavadora"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/lavadora.webp" alt="Imagen lavadora"></div>
                     <button class="item__name normal-text">Lavadora</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/sandwichera.webp" alt="Imagen sandwichera"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/sandwichera.webp" alt="Imagen sandwichera"></div>
                     <button class="item__name normal-text">Sandwichera</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/televisor.webp" alt="Imagen televisor"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/televisor.webp" alt="Imagen televisor"></div>
                     <button class="item__name normal-text">Televisor</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/vajilla.webp" alt="Imagen juego de vajilla"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/vajilla.webp" alt="Imagen juego de vajilla"></div>
                     <button class="item__name normal-text">Juego de vajilla</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/microondas.webp" alt="Imagen microondas"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/microondas.webp" alt="Imagen microondas"></div>
                     <button class="item__name normal-text">Microondas</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/edredones.webp" alt="Imagen edredones"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/edredones.webp" alt="Imagen edredones"></div>
                     <button class="item__name normal-text">Juego de edredones</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/comedor.webp" alt="Imagen comedor"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/comedor.webp" alt="Imagen comedor"></div>
                     <button class="item__name normal-text">Juego de comedor</button>
                 </div>
                 <div class="list__item">
-                    <div class="item__object"><img src="assets/img/images/sala.webp" alt="Imagen juego de sala"></div>
+                    <div class="item__object"><img loading="lazy" src="assets/img/images/sala.webp" alt="Imagen juego de sala"></div>
                     <button class="item__name normal-text">Juego de sala</button>
                 </div>
             </div>
         </div>
     </dialog>
 
+    <dialog class="transfer" id="transfer">
+        <div class="transfer__section">
+            <button id="close-transfer"><span class="material-symbols-outlined">arrow_back</span></button>
+            <img src="assets/img/images/Untitled design.jpg" alt="Imagen QR yape">
+            <div class="transfer__number">
+                <p class="transfer__number--title">BCP - </p>
+                <p id="bcp">57097437911085</p>
+                <span class="material-symbols-outlined" onclick="copiarBcp()">content_copy</span>
+            </div>
+            <div class="transfer__number number__bbva">
+                <p class="transfer__number--title">BBVA - </p>
+                <p id="bbva">0011-0579-0219365453</p>
+                <span class="material-symbols-outlined" onclick="copiarBbva()">content_copy</span>
+            </div>
+            <div class="transfer__number">
+                <p class="transfer__number--title">INTERBANK - </p>
+                <p id="interbank">8983430843291</p>
+                <span class="material-symbols-outlined" onclick="copiarInterbank()">content_copy</span>
+            </div>
+            <button class="main-btn" id="close-transfer_two">CONFIRMAR</button>
+        </div>
+    </dialog>
+
     <!-- Sección de número de pases y confirmación -->
     <section class="passes">
-        <img src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
+        <img loading="lazy" src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
         <p class="section__title">Pases</p>
-        <div class="passes__attendance">
-            <p class="normal-text">Consulta el número de pases que hemos separado para ti y confirma tu asistencia</p>
-        </div>
-        <button class="main-btn name__title" id="open-passes">
-            <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
-            <p>CONFIRMA TU ASISTENCIA</p>
-            <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
-        </button>
         <div class="passes__message">
             <p class="little-text">"TU PRESENCIA EN NUESTRA BODA SIGNIFICA MUCHO PARA NOSOTROS. POR FAVOR, AYÚDANOS A MANTENER TODO ORGANIZADO Y ORDENADO RESPETANDO EL NÚMERO DE PASES INDICADOS EN ESTA INVITACIÓN. MUCHAS GRACIAS."</p>
         </div>
+        <button class="main-btn name__title" id="open-passes">
+            <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+            <p>CONFIRMA TU ASISTENCIA</p>
+            <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+        </button>
     </section>
 
     <dialog class="passes" id="passes">
@@ -392,9 +413,9 @@
                 <input type="text" name="" id="">
                 <div class="line_h"></div>
                 <button class="main-btn name__title passes-btn" id="open-passes">
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                     <p>CONFIRMA TU ASISTENCIA</p>
-                    <img class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
+                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                 </button>
             </form>
         </div>
@@ -402,7 +423,6 @@
 
     <!-- Sección de mensaje sobre los niños -->
     <section class="kids">
-        <img src="assets/img/icons/separator.webp" alt="Separador de girasoles" class="sunflower-separator">
         <div class="kids__text">
             <div class="kids__text--section">
                 <p>"ADORAMOS A TUS PEQUEÑOS, SIN EMBARGO, ESTE EVENTO ESTÁ DESTINADO SOLO PARA ADULTOS. ¡ESPERAMOS TU COMPRENSIÓN!"</p>

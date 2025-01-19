@@ -106,6 +106,30 @@ btnCloseGift.addEventListener("click", () => {
 });
 
 
+// Funcionalidad modal transferencia
+const modal_transfer = document.getElementById("transfer");
+const btnOpenTransfer = document.getElementById("open-transfer");
+const btnCloseTransfer = document.getElementById("close-transfer");
+const btnCloseTransfer2 = document.getElementById("close-transfer_two");
+
+btnOpenTransfer.addEventListener("click", () => {
+    modal_transfer.showModal();
+    modal_gift.close();
+    body.classList.add("block-scroll");
+});
+
+btnCloseTransfer.addEventListener("click", () => {
+    modal_gift.showModal();
+    modal_transfer.close();
+    body.classList.remove("block-scroll");
+});
+
+btnCloseTransfer2.addEventListener("click", () => {
+    modal_transfer.close();
+    body.classList.remove("block-scroll");
+});
+
+
 // Funcionalidad modal asistencia
 const modal_passes = document.getElementById("passes");
 const btnOpenPasses = document.getElementById("open-passes");
@@ -120,3 +144,13 @@ btnClosePasses.addEventListener("click", () => {
     modal_passes.close();
     body.classList.remove("block-scroll");
 });
+
+
+// Funcionalidad para copiar los textos
+const bcp = document.getElementById("bcp").innerHTML;
+const bbva = document.getElementById("bbva").innerHTML;
+const interbank = document.getElementById("interbank").innerHTML;
+
+const copiarBcp = async () => {await navigator.clipboard.writeText(bcp);}
+const copiarBbva = async () => {await navigator.clipboard.writeText(bbva);}
+const copiarInterbank = async () => {await navigator.clipboard.writeText(interbank);}

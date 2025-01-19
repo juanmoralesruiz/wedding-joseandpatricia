@@ -45,7 +45,7 @@ h1, h2, h3, p, div, img, button, iframe {
     font-size: clamp(0.938rem, 0.668rem + 1.196vw, 1.625rem);
 }
 
-.people, .front-page, .people__name, .ubication__section, .map__section, .group__section, .group__activity, .activity__text, .itinerary, .list__item {
+.people, .front-page, .people__name, .ubication__section, .map__section, .group__section, .group__activity, .activity__text, .itinerary, .list__item, footer, .transfer__section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,6 +93,94 @@ h1, h2, h3, p, div, img, button, iframe {
     overflow: hidden;
 }
 
+.music-verse, .cd__invitation, .cd__countdown, .dress-code, .gallery, .ubication, .gift, .passes, .kids {
+    text-align: center;
+}
+
+/* -----------------------------------------------------
+--------------------- Margin sizes ---------------------
+-------------------------------------------------------- */
+
+.music__text, .gift__text .little-text {
+    margin: clamp(1.25rem, 0.663rem + 2.609vw, 2.75rem) 0 clamp(0.875rem, 0.386rem + 2.174vw, 2.125rem) 0;
+}
+
+.verse__text p {
+    margin: clamp(0.875rem, 0.533rem + 1.522vw, 1.75rem) 0 clamp(0.313rem, 0.043rem + 1.196vw, 1rem) 0;
+}
+
+.line_h:first-child, .slideshow-container img {
+    margin: clamp(0.875rem, 0.435rem + 1.957vw, 2rem) 0;
+}
+
+.countdown__date, .countdown__time {
+    margin: clamp(1rem, 0.707rem + 1.304vw, 1.75rem) 0;
+}
+
+.name__section .name__title {
+    margin: clamp(0.875rem, 0.435rem + 1.957vw, 2rem) 0 clamp(0.625rem, 0.38rem + 1.087vw, 1.25rem) 0;
+}
+
+.line_h:last-child, .invitation__us {
+    margin-bottom: clamp(1.25rem, 0.761rem + 2.174vw, 2.5rem);
+}
+
+h3:nth-child(4) {
+    margin-top: clamp(2.813rem, 2.348rem + 2.065vw, 4rem);
+}
+
+.invitation__group--text1 p {
+    margin: clamp(0.375rem, -0.065rem + 1.957vw, 1.5rem) 0 clamp(0.875rem, 0.484rem + 1.739vw, 1.875rem) 0;
+}
+
+.invitation__group--text2 p, .dress-code .icon {
+    margin: clamp(1.125rem, 0.832rem + 1.304vw, 1.875rem) 0 clamp(1.375rem, 0.935rem + 1.957vw, 2.5rem) 0;
+}
+
+.invitation__group--text1 p, .invitation__group--text2 p, .dress-code__white p {
+    line-height: clamp(1.438rem, 1.12rem + 1.413vw, 2.25rem);
+}
+
+.dress-code .bold {
+    margin: clamp(0.625rem, 0.38rem + 1.087vw, 1.25rem) 0;
+}
+
+.sunflower-separator {
+    margin: clamp(1.625rem, 1.283rem + 1.522vw, 2.5rem) 0;
+}
+
+.music-verse .sunflower-separator {
+    margin: 0;
+}
+
+.section__title {
+    line-height: clamp(5.625rem, 4.402rem + 5.435vw, 8.75rem);
+}
+
+.ubication .icon {
+    margin-top: clamp(2.5rem, 2.011rem + 2.174vw, 3.75rem);
+}
+
+.itinerary__group {
+    margin: 24px 0 clamp(0.625rem, 0.38rem + 1.087vw, 1.25rem) 0;
+}
+
+.little-text {
+    line-height: clamp(1.25rem, 0.957rem + 1.304vw, 2rem);
+}
+
+.passes .section__title {
+    line-height: clamp(3.75rem, 2.772rem + 4.348vw, 6.25rem);
+}
+
+.passes__message p {
+    margin: clamp(0.75rem, 0.457rem + 1.304vw, 1.5rem) 0 clamp(0.5rem, 0.402rem + 0.435vw, 0.75rem) 0;
+}
+
+#open-gift, #open-passes {
+    margin: clamp(1.25rem, 0.957rem + 1.304vw, 2rem) auto;
+}
+
 /* -----------------------------------------------------
 ---------- Portada principal de la invitación ----------
 -------------------------------------------------------- */
@@ -133,10 +221,6 @@ h2:nth-child(2) {
 ------------- Sección de música y versículo ------------
 -------------------------------------------------------- */
 
-.music-verse {
-    text-align: center;
-}
-
 .music-verse .verse__text {
     margin: auto;
     width: clamp(18rem, 9.391rem + 38.261vw, 40rem);
@@ -171,16 +255,13 @@ h2:nth-child(2) {
 -------- Sección de invitación y cuenta regresiva ------
 -------------------------------------------------------- */
 
-.cd__invitation, .cd__countdown {
-    text-align: center;
-}
-
 .invitation__us {
     font-size: clamp(1.438rem, 0.826rem + 2.717vw, 3rem);
 }
 
 .cd__invitation h3 {
     font-size: clamp(5.938rem, 5.082rem + 3.804vw, 8.125rem);
+    line-height: clamp(5rem, 4.266rem + 3.261vw, 6.875rem);
 }
 
 .cd__invitation .invitation__group--text1 {
@@ -233,10 +314,6 @@ h2:nth-child(2) {
 /* -----------------------------------------------------
 ------------- Sección código de vestimenta -------------
 -------------------------------------------------------- */
-
-.dress-code {
-    text-align: center;
-}
 
 .dress-code__white {
     width: clamp(18.125rem, 9.565rem + 38.043vw, 40rem);
@@ -311,12 +388,8 @@ h2:nth-child(2) {
 ----------------- Sección de ubicación -----------------
 -------------------------------------------------------- */
 
-.ubication {
-    text-align: center;
-}
-
 .ubication__section {
-    margin: auto;
+    margin: clamp(1rem, 0.658rem + 1.522vw, 1.875rem) auto clamp(0.625rem, 0.38rem + 1.087vw, 1.25rem) auto;
     width: clamp(22.5rem, 16.63rem + 26.087vw, 37.5rem);
     height: clamp(15.625rem, 12.495rem + 13.913vw, 23.625rem);
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photos/ubication.webp);
@@ -347,16 +420,16 @@ h2:nth-child(2) {
     font-size: clamp(0.844rem, 0.734rem + 0.489vw, 1.125rem);
 }
 
-.map::backdrop, .gift::backdrop, .passes::backdrop {
+.map::backdrop, .gift::backdrop, .passes::backdrop, .transfer::backdrop {
     background-color: var(--color-bgModal);
 }
 
-.map, .gift, .passes {
+.map, .gift, .passes, .transfer {
     border: none;
     background-color: transparent;
 }
 
-.map__section, .gift__section, .passes__section {
+.map__section, .gift__section, .passes__section, .transfer__section {
     justify-content: center;
     position: relative;
     background-color: var(--color-background);
@@ -428,13 +501,60 @@ h2:nth-child(2) {
 ----------------- Sección de regalos -----------------
 -------------------------------------------------------- */
 
-.gift {
-    text-align: center;
-}
-
 .gift__section {
     width: 89vw;
     height: 82dvh;
+}
+
+.transfer__section {
+    width: 80vw;
+    height: 50vh;
+}
+
+.transfer__section img {
+    width: 20vh;
+    height: 20vh;
+    border-radius: 12px;
+    margin-bottom: 3.2vh;
+}
+
+.transfer__number {
+    display: flex;
+    font-family: var(--font-title);
+    align-items: center;
+    font-size: 1.622vh;
+}
+
+.number__bbva {
+    margin: 1.622vh 0;
+}
+
+.transfer__number .transfer__number--title {
+    font-weight: 600;
+    margin-right: 3px;
+}
+
+.transfer__number .material-symbols-outlined {
+    cursor: pointer;
+    font-size: 2.3vh;
+    margin-left: 3px;
+}
+
+#close-transfer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: transparent;
+    color: var(--color-font);
+    margin: 13px 0 0 13px;
+    cursor: pointer;
+}
+
+#close-transfer_two {
+    border: 1px solid var(--color-colorButton);
+    color: var(--color-colorButton);
+    margin-top: 24px;
 }
 
 .gift__text {
@@ -466,6 +586,12 @@ h2:nth-child(2) {
     -webkit-box-shadow: 0px 0px 4px 2px rgba(75,56,12,0.2);
     -moz-box-shadow: 0px 0px 4px 2px rgba(75,56,12,0.2);
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.list__item:hover {
+    transform: scale(1.03);
+    transition: .3s;
 }
 
 .item__object {
@@ -490,23 +616,21 @@ h2:nth-child(2) {
     border-radius: 4px;
     font-size: clamp(0.813rem, 0.764rem + 0.217vw, 0.938rem);
     margin-bottom: clamp(0.75rem, 0.677rem + 0.326vw, 0.938rem);
+    cursor: pointer;
+}
+
+.item__name:hover {
+    background-color: var(--color-colorButton);
+    color: var(--color-background);
+    transition: background-color .4s;
 }
 
 /* -----------------------------------------------------
 ------ Sección pases y confirmación de asistencia ------
 -------------------------------------------------------- */
 
-.passes {
-    text-align: center;
-}
-
-.passes__attendance {
-    width: clamp(13.75rem, 9.739rem + 17.826vw, 24rem);
-    margin: auto;
-}
-
 .passes__message {
-    width: clamp(19.375rem, 11.793rem + 33.696vw, 38.75rem);
+    width: clamp(19.375rem, 6.413rem + 57.609vw, 52.5rem);
     margin: auto;
 }
 
@@ -519,16 +643,12 @@ h2:nth-child(2) {
 ------------- Sección mensaje sobre niños --------------
 -------------------------------------------------------- */
 
-.kids {
-    text-align: center;
-}
-
 .kids__text {
     font-family: var(--font-title);
     background-color: var(--color-colorButton);
     color: var(--color-background);
     font-size: clamp(0.688rem, 0.565rem + 0.543vw, 1rem);
-    padding: clamp(0.375rem, 0.228rem + 0.652vw, 0.75rem) 0;
+    padding: clamp(0.625rem, 0.527rem + 0.435vw, 0.875rem) 0;
 }
 
 .kids__text--section {
@@ -537,7 +657,7 @@ h2:nth-child(2) {
 }
 
 .kids__text--section p {
-    line-height: clamp(1.125rem, 0.832rem + 1.304vw, 1.875rem);
+    line-height: clamp(1.375rem, 1.179rem + 0.87vw, 1.875rem);
 }
 
 /* -----------------------------------------------------
@@ -545,11 +665,13 @@ h2:nth-child(2) {
 -------------------------------------------------------- */
 
 footer {
-    text-align: center;
+    justify-content: center;
+    padding: clamp(0.188rem, 0.065rem + 0.543vw, 0.5rem) 0;
 }
 
 footer a {
     color: var(--color-font);
+    margin: clamp(0.5rem, 0.255rem + 1.087vw, 1.125rem);
 }
 
 footer p {
@@ -559,8 +681,8 @@ footer p {
 
 .ic--baseline-whatsapp {
     display: inline-block;
-    width: clamp(1.5rem, 1.378rem + 0.543vw, 1.813rem);
-    height: clamp(1.5rem, 1.378rem + 0.543vw, 1.813rem);
+    width: clamp(1.375rem, 1.302rem + 0.326vw, 1.563rem);
+    height: clamp(1.375rem, 1.302rem + 0.326vw, 1.563rem);
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28'/%3E%3C/svg%3E");
     background-color: currentColor;
     -webkit-mask-image: var(--svg);
@@ -573,8 +695,8 @@ footer p {
 
 .mdi--instagram {
     display: inline-block;
-    width: clamp(1.5rem, 1.378rem + 0.543vw, 1.813rem);
-    height: clamp(1.5rem, 1.378rem + 0.543vw, 1.813rem);
+    width: clamp(1.375rem, 1.302rem + 0.326vw, 1.563rem);
+    height: clamp(1.375rem, 1.302rem + 0.326vw, 1.563rem);
     --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3'/%3E%3C/svg%3E");
     background-color: currentColor;
     -webkit-mask-image: var(--svg);
@@ -591,8 +713,8 @@ footer p {
 
 @media screen and (min-width:768px) {
     .passes__section {
-        width: 50vw;
-        height: 30dvh;
+        width: 60vw;
+        height: 35dvh;
     }
 }
 
@@ -603,14 +725,9 @@ footer p {
 }
 
 @media screen and (min-width:1024px) {
-    .map__section, .gift__section, .passes__section {
-        width: 65vw;
-        height: 90dvh;
-    }
-
-    .passes__section {
-        width: 40vw;
-        height: 50dvh;
+    .name__section {
+        margin-left: 32px;
+        margin-right: 32px;
     }
 
     .itinerary__group {
@@ -626,5 +743,29 @@ footer p {
         height: 4px;
         width: clamp(5.625rem, 4.947rem + 3.012vw, 6.875rem);
         margin: 0 15px;
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .gift__section {
+        width: 65vw;
+        height: 90dvh;
+    }
+
+    .transfer__section {
+        width: 35vw;
+        height: 55vh;
+    }
+
+    .passes__section {
+        width: 40vw;
+        height: 50dvh;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .map__section {
+        width: 65vw;
+        height: 90dvh;
     }
 }
