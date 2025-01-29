@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+.card__title {
+    display: flex;
+    width: 720px;
+    background-color: #E8B032;
+    margin: 32px auto 0;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card__title p {
+    font-family: "Libre Caslon Text", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.card__title img {
+    width: 25px;
+    height: 25px;
+    margin: 0 12px;
+}
+
+.card__body {
+    width: 720px;
+    margin: 0 auto;
+    background-color: #e9e0b7;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 32px;
+    box-sizing: border-box;
+}
+
+.card__body p {
+    font-family: "Libre Caslon Display", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.foot__verse {
+    background-color: #4B380C;
+    margin-top: 32px;
+    color: #FEFCF1;
+    padding: 10px 0;
+}
+
+.foot__verse p {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+}

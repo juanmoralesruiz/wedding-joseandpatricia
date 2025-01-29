@@ -1,3 +1,37 @@
+<?php
+
+include("database/db.php");
+session_start();
+
+print_r($_POST);
+
+$code = (isset($_POST['code']))?$_POST['code']:"";
+$action = (isset($_POST['action']))?$_POST['action']:"";
+
+switch ($action) {
+    case 'Validar':
+        $sentenciaSQL = $conexion->prepare("INSERT INTO informacion (codigo, nombre) VALUES (:code, :code)");
+        $sentenciaSQL->bindParam(':code', $code);
+        $sentenciaSQL->execute();
+        echo "Se está validando el número de pases";
+        break;
+    case 'Confirmo':
+        echo "Se está confirmando la asistencia";
+        break;
+    case 'No puedo':
+        echo "Se está confirmando la asistencia";
+        break;
+    case 'Enviar':
+        echo "Se está enviando el mensaje";
+        break;
+}
+
+$sentenciaSQL=$conexion->prepare("SELECT * FROM informacion");
+$sentenciaSQL->execute();
+$datosInvitados=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +39,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="animations.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <script src="assets/js/main.js" defer></script>
     <title>Nuestra boda - José y Patricia</title>
@@ -53,8 +88,8 @@
                     <p>PADRES DE LA NOVIA</p>
                     <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                 </div>
-                <p class="name__text">Victor Raul Romero</p>
-                <p class="name__text">Cierto Esther Campos Lopez</p>
+                <p class="name__text">Victor Raul Romero Cierto</p>
+                <p class="name__text">Esther Campos Lopez</p>
             </div>
         </div>
         <div class="people__name">
@@ -108,7 +143,7 @@
                 <div class="line_v"></div>
                 <p>2025</p>
             </div>
-            <p class="countdown__text">2:00 PM</p>
+            <p class="countdown__text">1:00 PM</p>
             <div class="countdown__time">
                 <div class="time__charGroup">
                     <p class="time__char" id="days"></p>
@@ -149,40 +184,40 @@
         <p class="section__title">Galería</p>
         <div class="slideshow-container">
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-01.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-01.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-02.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-02.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-03.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-03.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-04.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-04.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-05.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-05.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-06.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-06.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-07.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-07.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-08.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-08.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-09.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-09.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-10.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-10.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-11.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-11.jpg" style="width:100%">
             </div>
             <div class="mySlides">
-                <img loading="lazy" src="assets/img/photos/p-12.webp" style="width:100%">
+                <img loading="lazy" src="assets/img/photos/p-12.jpg" style="width:100%">
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -206,7 +241,7 @@
     <!-- Sección de ubicación -->
     <section class="ubication">
         <img loading="lazy" src="assets/img/icons/cup.webp" alt="Ícono del código de vestimenta" class="icon">
-        <p class="section__title">Recepción</p>
+        <p class="section__title">Ceremonia y recepción</p>
         <div class="ubication__section">
             <p class="ubication__name">Nuestra Villa</p>
             <button class="main-btn name__title" id="open-map">
@@ -234,7 +269,7 @@
                     <img loading="lazy" src="assets/img/icons/civil.webp" alt="Ícono ceremonia civil">
                     <div class="activity__text">
                         <p>CEREMONIA CIVIL</p>
-                        <p>3:30 PM</p>
+                        <p>3:00 PM</p>
                     </div>
                 </div>
                 <div class="group__line line_v"></div>
@@ -282,7 +317,7 @@
                 <div class="group__activity">
                     <img loading="lazy" src="assets/img/icons/show.webp" alt="Ícono tiempo del show">
                     <div class="activity__text">
-                        <p>SHOW</p>
+                        <p>PARTY</p>
                         <p>8:30 PM</p>
                     </div>
                 </div>
@@ -409,14 +444,9 @@
         <div class="passes__section">
             <button id="close-passes"><span class="material-symbols-outlined">Cancel</span></button>
             <p class="passes__title">Ingresa tu código personal</p>
-            <form action="" method="get">
-                <input type="text" name="" id="">
-                <div class="line_h"></div>
-                <button class="main-btn name__title passes-btn" id="open-passes">
-                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
-                    <p>CONFIRMA TU ASISTENCIA</p>
-                    <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
-                </button>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="text" name="code" placeholder="Ingresa tu mensaje" autofocus>
+                <input type="submit" name="action" class="main-btn name__title passes-btn" value="Validar">
             </form>
         </div>
     </dialog>

@@ -187,7 +187,7 @@ h3:nth-child(4) {
 
 .front-page {
     height: 100dvh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photos/p-main.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/photos/p-main.jpg);
     background-size: cover;
     background-position: center;
     justify-content: center;
@@ -197,7 +197,9 @@ h3:nth-child(4) {
     font-family: var(--font-italic);
     color: #FFFFFF;
     text-align: center;
-    
+    animation-name: starting;
+    animation-duration: 3s;
+    animation-delay: 0S;
 }
 
 h1 {
@@ -205,6 +207,9 @@ h1 {
     font-weight: 400;
     color: #FFFFFF;
     margin: 25px 0 10px 0;
+    animation-name: starting;
+    animation-duration: 5s;
+    animation-delay: 0S;
 }
 
 h2 {
@@ -708,7 +713,7 @@ footer p {
 }
 
 /* -----------------------------------------------------
------------------ SECCIÓN MEDIA QUERYS -----------------
+--------------- Media Querys (Responsive) --------------
 -------------------------------------------------------- */
 
 @media screen and (min-width:768px) {
@@ -726,8 +731,10 @@ footer p {
 
 @media screen and (min-width:1024px) {
     .name__section {
-        margin-left: 32px;
-        margin-right: 32px;
+        animation-name: nameSection;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-timing-function: linear;
     }
 
     .itinerary__group {
@@ -767,5 +774,29 @@ footer p {
     .map__section {
         width: 65vw;
         height: 90dvh;
+    }
+}
+
+/* -----------------------------------------------------
+----------------- Animaciones generales ----------------
+-------------------------------------------------------- */
+
+@keyframes starting {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes nameSection {
+    from {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    to {
+        margin-left: 32px;
+        margin-right: 32px;
     }
 }
