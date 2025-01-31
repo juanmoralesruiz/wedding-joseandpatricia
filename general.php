@@ -13,9 +13,6 @@ switch ($action) {
         $sentenciaSQL->execute();
         header("Location: cr");
         break;
-    case 'Redirigir':
-        header("Location: ca");
-        break;
 }
 
 $sentenciaSQL = $conexion->prepare("SELECT * FROM informacion");
@@ -384,13 +381,14 @@ $datosRegalos = $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
         <div class="passes__message">
             <p class="little-text">"TU PRESENCIA EN NUESTRA BODA SIGNIFICA MUCHO PARA NOSOTROS. POR FAVOR, AYÚDANOS A MANTENER TODO ORGANIZADO Y ORDENADO RESPETANDO EL NÚMERO DE PASES INDICADOS EN ESTA INVITACIÓN. MUCHAS GRACIAS."</p>
         </div>
-        <form method="POST" enctype="multipart/form-data">
+        <a href="https://wa.link/eiow45" target="_blank">
             <button type="submit" name="action" class="main-btn name__title" id="open-passes" value="Redirigir">
                 <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
                 <p>CONFIRMA TU ASISTENCIA</p>
                 <img loading="lazy" class="sunflower-icon" src="assets/img/icons/sunflower-icon.webp" alt="Ícono de girasol">
             </button>
-        </form>
+        </a>
+            
     </section>
 
     <!-- Sección de mensaje sobre los niños -->

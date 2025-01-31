@@ -11,7 +11,7 @@
     --color-background: #FEFCF1;
     --color-font: #46230A;
     --color-mainButton: #E8B032;
-    --color-bgModal: #000000d7;
+    --color-bgModal: #0e0e0ebd;
     --color-colorButton: #4B380C;
 
     /* --- Tipografía --- */
@@ -425,16 +425,16 @@ h2:nth-child(2) {
     font-size: clamp(0.844rem, 0.734rem + 0.489vw, 1.125rem);
 }
 
-.map::backdrop, .gift::backdrop, .passes::backdrop, .transfer::backdrop {
+.map::backdrop, .gift::backdrop, .passes::backdrop, .transfer::backdrop, .regalo::backdrop {
     background-color: var(--color-bgModal);
 }
 
-.map, .gift, .passes, .transfer {
+.map, .gift, .passes, .transfer, .regalo {
     border: none;
     background-color: transparent;
 }
 
-.map__section, .gift__section, .passes__section, .transfer__section {
+.map__section, .gift__section, .passes__section, .transfer__section, .regalo__section {
     justify-content: center;
     position: relative;
     background-color: var(--color-background);
@@ -710,6 +710,29 @@ footer p {
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
     mask-size: 100% 100%;
+}
+
+/* -----------------------------------------------------
+-------------------- Estilos finales -------------------
+-------------------------------------------------------- */
+
+.gift__explain {
+    width: clamp(18.75rem, 8.478rem + 45.652vw, 45rem);
+    margin: 30px auto 0 auto;
+}
+
+.gift__explain p {
+    font-size: 15px;
+}
+
+.litle-note {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #4B380C;
 }
 
 /* -----------------------------------------------------

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.modal-regalo, .modal-passes {
+    background-color: #0e0e0ecc;
+    position: absolute;
+    width: 100%;
+    height: 100dvh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-regalo-body, .modal-passes-body {
+    background-color: #FEFCF1;
+    width: 70vw;
+    height: 35dvh;
+    border-radius: 10px;
+}
+
+.modal-regalo-body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal-passes-body form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.modal-regalo-body p, .texto__validado {
+    font-family: "Libre Caslon Text", sans-serif;
+}
+
+.modal-regalo-body p {
+    font-size: clamp(0.75rem, 0.652rem + 0.435vw, 1rem);
+}
+
+.texto__validado {
+    font-size: 14px;
+}
+
+.btnGroup-regalo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 30%;
+}
+
+#close-gift {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 150px;
+    height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button[value="dato-validar"], button[value="si-asistencia"], button[value="no-asistencia"], button[value="enviar-mensaje"] {
+    padding: 8px 14px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+.name__regalo {
+    text-transform: uppercase;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 75%;
+    color: #46230A;
+    font-size: 14px;
+    text-align: justify;
+    padding: 8px;
+    field-sizing: content;
+    max-height: 60%;
+    font-family: "Libre Caslon Text", sans-serif;
+}
+
+textarea::placeholder {
+    text-align: center;
+}
+
+.modal-mssg {
+    width: 80vw;
+    height: 45dvh;
+}
+
+
+@media screen and (min-width:1025px) {
+    .modal-regalo-body, .modal-passes-body {
+        width: 32vw;
+        height: 45dvh;
+    }
+
+    .btnGroup-regalo {
+        width: 62%;
+    }
+
+    .modal-mssg {
+        width: 42vw;
+        height: 62dvh;
+    }    
+}
